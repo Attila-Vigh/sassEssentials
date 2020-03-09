@@ -1,14 +1,15 @@
 {
-  "name": "sassessentials",
-  "version": "1.0.2",
-  "description": "A website for my Sass Essential Training course on Lynda.com",
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Resume",
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/sassEssentials.git"
+    "url": "https://github.com/Attila-Vigh/resume"
   },
-  "author": "Ray Villalobos",
+  "author": "Attila Vigh",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-jshint": "^2.1.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
