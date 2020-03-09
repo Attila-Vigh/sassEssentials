@@ -1,0 +1,21 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" r="32" fill="#005d7c" cy="32" cx="32"/>
+  <path opacity="0.2" id="svg_3" fill="#231F20" d="m16.5,28c-0.829,0 -1.5,-0.671 -1.5,-1.5l0,-8c0,-0.829 0.671,-1.5 1.5,-1.5l8,0c0.829,0 1.5,0.671 1.5,1.5s-0.671,1.5 -1.5,1.5l-6.5,0l0,6.5c0,0.829 -0.671,1.5 -1.5,1.5z"/>
+  <path opacity="0.2" id="svg_5" fill="#231F20" d="m47.5,28c-0.829,0 -1.5,-0.671 -1.5,-1.5l0,-6.5l-6.5,0c-0.829,0 -1.5,-0.671 -1.5,-1.5s0.671,-1.5 1.5,-1.5l8,0c0.829,0 1.5,0.671 1.5,1.5l0,8c0,0.829 -0.671,1.5 -1.5,1.5z"/>
+  <path opacity="0.2" id="svg_7" fill="#231F20" d="m47.5,51l-8,0c-0.829,0 -1.5,-0.671 -1.5,-1.5s0.671,-1.5 1.5,-1.5l6.5,0l0,-6.5c0,-0.829 0.671,-1.5 1.5,-1.5c0.829,0 1.5,0.671 1.5,1.5l0,8c0,0.829 -0.671,1.5 -1.5,1.5z"/>
+  <path opacity="0.2" id="svg_9" fill="#231F20" d="m24.5,51l-8,0c-0.829,0 -1.5,-0.671 -1.5,-1.5l0,-8c0,-0.829 0.671,-1.5 1.5,-1.5c0.829,0 1.5,0.671 1.5,1.5l0,6.5l6.5,0c0.829,0 1.5,0.671 1.5,1.5s-0.671,1.5 -1.5,1.5z"/>
+  <path opacity="0.2" id="svg_11" fill="#231F20" d="m35,38.5l-6,0c-0.829,0 -1.5,-0.671 -1.5,-1.5l0,-6c0,-0.829 0.671,-1.5 1.5,-1.5l6,0c0.829,0 1.5,0.671 1.5,1.5l0,6c0,0.829 -0.671,1.5 -1.5,1.5zm-4.5,-3l3,0l0,-3l-3,0l0,3z"/>
+  <polyline id="svg_12" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" points="  16.5,24.5 16.5,16.5 24.5,16.5 " fill="none"/>
+  <polyline id="svg_13" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" points="  39.5,16.5 47.5,16.5 47.5,24.5 " fill="none"/>
+  <polyline id="svg_14" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" points="  47.5,39.5 47.5,47.5 39.5,47.5 " fill="none"/>
+  <polyline id="svg_15" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" points="  24.5,47.5 16.5,47.5 16.5,39.5 " fill="none"/>
+  <rect id="svg_16" y="29" x="29" width="6" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#C75C5C" height="6" fill="none"/>
+ </g>
+</svg>
