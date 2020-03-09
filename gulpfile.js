@@ -1,9 +1,10 @@
 const gulp = require("gulp"),
   sass = require("gulp-sass"),
+  autoprefixer = require("gulp-autoprefixer"),
   sourcemaps = require("gulp-sourcemaps"),
   browserSync = require("browser-sync").create(),
+  dest = "./builds/resume/";
   source = "./process/",
-  dest = "./builds/sassEssentials/";
 
 sass.compiler = require("node-sass");
 
@@ -25,6 +26,7 @@ function styles() {
         style: "compressed"
       }).on("error", sass.logError)
     )
+    .pipe(autoprefixer())
     .pipe(gulp.dest(dest + "css"));
 }
 
