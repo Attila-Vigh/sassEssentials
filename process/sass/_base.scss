@@ -5,10 +5,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.8rem;
-  font-family: $font-main;
-  color: $color-main;
-  background-color: $color-backgrounds;
+  background-color: $color-primary-bg;
+  color:            $color-primary;
+  font-size:        1.8rem;
+  font-family:      $font-base;
 }
 
 .container {
@@ -16,15 +16,61 @@ body {
   margin: 0 auto;
 }
 
-$color-headlines: $blue, $purple, $green,
-  $red, $orange, $yellow;
 
-h1,h2,h3,h4,h5,h6 {
+.contact-kkeyword, .contact-attribute, .contact-string, .contact-punctuation-mark {
   font-family: $font-highlight;
 }
 
-@for $item from 1 through length($color-headlines) {
-  h#{$item} {
-    color: nth($color-headlines, $item);
-  }
+
+html {
+	box-sizing: border-box;
 }
+// *, *:before, *:after {
+// 	box-sizing: inherit;
+// }
+// body {
+// 	font-family: 'Open Sans', sans-serif;
+// 	margin: 0;
+
+// }
+// main, section {
+// 	position: relative;
+// }
+// h1, h2 {
+// 	font-family: 'Caveat', cursive;
+// 	font-weight: 400;
+// }
+// h1 {
+// 	font-size: 3.6em;
+// }
+// h2 {
+// 	font-size: 2.4em;
+// 	margin-top: 0;
+// }
+// h3 {
+// 	margin: 0;
+// }
+// a {
+// 	color: var(--primary-color);
+// }
+// a:hover {
+// 	text-decoration: none;
+// }
+// .content-wrap {
+// 	max-width: 80vw;
+// 	margin: 0 auto;
+// 	padding: 60px 0px;
+// 	overflow: hidden;
+// }
+// .uppercase {
+// 	text-transform: uppercase;
+// }
+
+// /* Download button */
+// .btn {
+// 	text-decoration: none;
+// 	background: #EF233C;
+// 	color: white;
+// 	padding: 10px;
+// 	display: inline-block;
+// }

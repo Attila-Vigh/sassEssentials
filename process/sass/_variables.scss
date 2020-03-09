@@ -1,27 +1,44 @@
 // Load Fonts
 
+
+$blue:              #0076A3;
+$download:          #2c6d7e;
+$darkblue:          #022933;
+$dark-green-blue:   #041b21;
+$purple:            #6D73C2;
+$offwhite:          #EEE8D6;
+$yellow:            #FFBA00;
+$light-orange:      #ffdfc7;
+$orange:            #F39856;
+$pink:              #e7909f;
+$violet:            #ee82ee;
+$red:               #D14348;
+$green:             #548C27;
+
+$color-primary-bg:           $dark-green-blue;
+$color-secondary-bg:         antiquewhite;
+$color-primary:              antiquewhite;
+$color-secondary:            $dark-green-blue;
+$color-download-backgrounds: $download;
+$color-headlines:            $red;
+
+
+$kkeyword:                   $violet;
+$attribute:                  $blue;
+$string:                     $green;
+$punctuation-mark:           $pink;
+
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
-
-$offwhite:    #EEE8D6;
-$darkblue:    #022933;
-$yellow:      #FFBA00;
-$blue:        #0076A3;
-$green:       #548C27;
-$orange:      #F39856;
-$red:         #D14348;
-$purple:      #6D73C2;
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa:400,700|Overlock:400,400i,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Overlock:400|400i|700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700);
 
 
-$color-main: $darkblue;
-$color-backgrounds: $offwhite;
-$color-headlines: $red;
 
-
-$font-main: Merriweather, Helvetica, sans-serif;
-$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+$font-base:         'Overlock', cursive;
+$font-h1-h2:        'Caveat', cursive;
+$font-highlight:    'Bree Serif', Helvetica, sans-serif;
 
 //breakpoints
+$breakpoints:	    760px;
 
-$small:		450px;
-$medium:	760px;
-$large:		1200px;

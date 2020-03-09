@@ -1,0 +1,48 @@
+footer & {
+    margin-top:20px;
+    min-height: 200px;
+    background-color: darken($blue, 15%);
+
+    @include break(0, 500px) {
+        display: none;
+    }
+
+    /* Contact & Footer
+-------------------------*/
+/* footer */
+
+
+.show, footer {
+	
+	color: antiquewhite;
+    background-color: #96162f
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+}
+.contact-info a {
+	padding: 10px;
+	display: inline-block;
+}
+.green, #contact a {
+	color: chartreuse;
+}
+.violet {
+	color: violet;
+}
+.blue {
+	color: rgb(79, 79, 165);
+}
+.typoSign {
+	color: var(--primary-color);
+}
+#contact ul li {
+	text-align: start;
+	padding-bottom: 0.6em;
+}
+#contact ul:last-child {
+	padding-top: 0.6em;
+}
+}

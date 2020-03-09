@@ -1,17 +1,3 @@
-@mixin backImage($image,
-  $height: 100vh,
-  $bgPos: center center
-  ) {
-  background: linear-gradient( to bottom,
-    rgba(0,0,0,0),
-    rgba(0,0,0,.6)),
-    url($image);
-  background-repeat: no-repeat;
-  background-position: $bgPos;
-  background-size: cover;
-  height: $height;
-}
-
 @mixin clearfix {
   &:before,
   &:after {
@@ -22,6 +8,12 @@
     clear: both;
   }
 }
+
+@mixin fonts (/*$family,*/ $size, $shadow){
+  // font-family: $family; "'Caveat', cursive",
+  font-size: $size;
+  text-shadow: $shadow $shadow $shadow #aaa;
+};
 
 @mixin imagegrid($qty, $margin) {
   width: ((100% - (($qty - 1) * $margin))/$qty);
@@ -47,4 +39,22 @@
     }
   }
 
+}
+
+@mixin lessThan($args1, $args2, $args3) {
+  	@media (max-width: nth($args1)) {
+		@content;
+	}
+  	@media (max-width: nth($args2)) {
+		@content;
+	}
+  	@media (max-width: nth($args3)) {
+		@content;
+	}
+}
+
+@mixin largerThen($args1) {
+  	@media (min-width: $args1) {
+		@content;
+	}
 }
