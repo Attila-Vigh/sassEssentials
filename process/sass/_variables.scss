@@ -9,11 +9,12 @@ $purple:            #6D73C2;
 $offwhite:          #EEE8D6;
 $yellow:            #FFBA00;
 $light-orange:      #ffdfc7;
-$orange:            #F39856;
+$orange:            #fa6800;
 $pink:              #e7909f;
 $violet:            #ee82ee;
 $red:               #D14348;
 $green:             #548C27;
+$shadow:            #07313179;
 
 $color-primary-bg:           $dark-green-blue;
 $color-secondary-bg:         antiquewhite;
@@ -21,14 +22,14 @@ $color-primary:              antiquewhite;
 $color-secondary:            $dark-green-blue;
 $color-download-backgrounds: $download;
 $color-headlines:            $red;
-
+$color-shadow:               $shadow;
+$color-typoSign:    #f7d2d2;
 
 $kkeyword:                   $violet;
 $attribute:                  $blue;
 $string:                     $green;
 $punctuation-mark:           $pink;
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa:400,700|Overlock:400,400i,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Overlock:400|400i|700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700);
@@ -40,5 +41,6 @@ $font-h1-h2:        'Caveat', cursive;
 $font-highlight:    'Bree Serif', Helvetica, sans-serif;
 
 //breakpoints
+
 $breakpoints:	    760px;
 

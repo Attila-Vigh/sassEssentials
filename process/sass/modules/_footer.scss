@@ -1,33 +1,108 @@
-footer & {
-    margin-top:20px;
-    min-height: 200px;
-    background-color: darken($blue, 15%);
+#contact {
+	padding-left: vw;
+	h2 {
+		margin-left: 10vw;
+	}
+}
+.contact {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 10% 10% 10% auto;
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin: 5%;
+	margin-top: 10%;
+    padding-left: 6vw;
+	font-weight: 700;
+	background-color:  #07313179;
+	box-shadow: 0px 0px 42px 54px #07313179;
+	border-radius: 6%;
+	> * {
+		box-shadow: 0px 0px 42px 54px #07313109;
+	}
+	.fa {
+		 padding: 0 3%;
+		}
+	.constVar {
+		grid-column: 1 / 5;
+		grid-row: 1 / 2;
+	}
+	.firstLet {
+		grid-column: 2 / 5;
+		grid-row: 2 / 3;
+	}
+	.webURL {
+		grid-column: 3 / 5;
+		grid-row: 3 / 4;
+	}
+	.secondLet {
+		grid-column: 2 / 5;
+		grid-row: 4 / 5;
+	}
+	.ifResult {
+		grid-column: 3 / 5;
+		grid-row: 5 / 6;
+	}
+	.thenResult {
+		grid-column: 3 / 5;
+		grid-row: 6 / 7;
+	}
+	.returnResults {
+		grid-column: 2 / 5;
+		grid-row: 7 / 8;
+	}
+	.closeBraket {
+		grid-column: 1 / 5;
+		grid-row: 8 / 9;
+	}
+	@include largerThen( 768px) {
+		& {
+			grid-template-columns: 3% 10% 6% 3% auto;
+			grid-template-rows: auto;
+			grid-column-gap: 10px;
+			grid-column-gap: 10px;
+			grid-row-gap: 30px;
+			margin: 0;
 
-    @include break(0, 500px) {
-        display: none;
-    }
-
-    /* Contact & Footer
--------------------------*/
-/* footer */
-
-
-.show, footer {
-	
-	color: antiquewhite;
-    background-color: #96162f
+		}
+		.firstLet {
+			grid-column: 2 / 6;
+			grid-row: 2 / 3;
+			}
+			.webURL {
+			display: inline;
+			grid-column: 5 / 6;
+			grid-row: 2 / 3;
+		}
+		.secondLet {
+			grid-column: 2 / 6;
+			grid-row: 3 / 4;
+		}
+		.ifResult {
+			grid-column: 3 / 6;
+			grid-row: 3 / 4;
+		}
+		.thenResult {
+			grid-column: 4 / 6;
+			grid-row: 3 / 4;
+		}
+		.returnResults {
+			grid-column: 2 / 6;
+			grid-row: 4 / 5;
+		}
+		.closeBraket {
+			grid-column: 1 / 6;
+			grid-row: 5 / 6;
+		}}
 }
 
-footer {
-	background-color: black;
-	text-align: center;
-}
-.contact-info a {
-	padding: 10px;
-	display: inline-block;
-}
-.green, #contact a {
+.green, #contact a, q > a{
 	color: chartreuse;
+}
+.orange {
+	color: $orange;
 }
 .violet {
 	color: violet;
@@ -36,13 +111,18 @@ footer {
 	color: rgb(79, 79, 165);
 }
 .typoSign {
-	color: var(--primary-color);
+	color: $color-typoSign;
 }
-#contact ul li {
-	text-align: start;
-	padding-bottom: 0.6em;
+.shadow {
+	display: block;
+	box-shadow: 0px 0px 42px 54px #07313179 inset;
+	padding: 10%;
+	@include largerThen(768px) {
+		padding: 5%;
+
+	}
 }
-#contact ul:last-child {
-	padding-top: 0.6em;
-}
+.copyright {
+	box-shadow: 0px 0px 42px 54px #07313179;
+	text-align: center;
 }
