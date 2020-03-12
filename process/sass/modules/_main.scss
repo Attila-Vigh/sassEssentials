@@ -1,21 +1,23 @@
 
 .panel {
-	position: relative;
+	position: absolute;
 	padding: 8vw 10vw;
-	// padding-top: 8vh;
-	// background-color: $color-primary-bg;
 	color: $color-primary;
 	font-family: $font-base;
-	// background-color: rgb(12, 45, 58);
-	// box-shadow: 10px 10px 10px green;
-	border-top: 1px dotted $color-primary;
-	border-bottom: 1px dotted $color-primary;
 	border-radius: 30px;
-						// 	  transition: max-height 0.9s ease-out;
-						// overflow: hidden;
-						//   max-height: 0;
-						//   display: none;
-	
+	max-height: 0%;
+	overflow: hidden;
+	z-index: -100;
+	opacity: 0.0;
+	// display: none;
+	transition: max-height 0.9s ease-in-out
+				opacity 1.9s ease-in-out;
+	&.show {
+		max-height: available;
+		opacity: 1.0;
+		overflow: visible;
+		position: relative;
+	}
 	h1, h2 {
 		margin: 0;
 		font-family: $font-h1-h2;
@@ -45,46 +47,48 @@
 			.profile-img{
 				width: 60vw;
 				border-radius: 50%;
-				box-shadow: 0px 0px 22px 34px #07313179;
+				box-shadow: 0px 0px 22px 34px #07313169;
 				// box-shadow: 10px 10x 10px #066;
 			}
 		}
-		h2 {
-			display: inline;
-			border-bottom: none;
+		div.jr {
+			display: block;
+			h2 {
+				display: inline-block;
+				border-bottom: none;
+			}
+			#jr {
+				font-size: .7em;
+				color:#066;
+			}
+			p {
+				margin-top: 10vh;
+				background-color: #07313169;
+			}
 		}
-		#jr {
-			font-size: .7em;
-			color:#066;
-		}
-		p {
-			margin-top: 10vh;
-		}
-		.btn.download {
+		.download {
 			text-decoration: none;
+			color: $color-primary;
 			background: $color-download-backgrounds;
-			color: white;
 			padding: 10px;
-			display: inline-block;
 			position: relative;
 			border-radius: 6px;
-			margin-bottom: 4vh;
-			bottom: 0;
-			right: 0;
 		}
-		p, .btn.download{
-			background-color: #07313169;
+		p, .download{
+			display: inline-block;
+			// background-color: #07313169;
 			box-shadow: 0px 0px 22px 34px #07313179;
 		}
+
 		@include largerThen( 768px) {
 			display: flow-root;
 			div {
 				display: inline;
 				.profile-img{
-					box-shadow:20px 20px 50px 10px pink inset;
 					width: 50vh;
 					float: left;
 					margin: 0 6vw 4vw 6vw;
+					// box-shadow:20px 20px 50px 10px pink inset;
 
 				}
 			}
@@ -95,9 +99,8 @@
 				margin-top: 10vh;
 
 			}
-			.btn.download {
+			.download {
 			position: absolute;
-			background: $color-download-backgrounds;
 			right: 0;
 			bottom: 0;
 			margin: 4vw;
@@ -108,27 +111,24 @@
 	.skills {
 		ul {
 			list-style-type: none;
+			padding-left: 0;
+			margin-left: 0;
 		}
 		li, div, p {
 			border-radius: 20px;
 			padding: 2vh;
-			padding-right: 0vh;
-			padding-left: 3vh;
 			background-color: #07313169;
 			box-shadow: -18px 0px 22px 34px #07313179;
 		}
 
 		div {
-			margin: 3vw 0vw 3vw 7vw;
-			box-shadow: -10px 0px 22px 34px #07313179;	
+			padding: 3vw -1vw 3vw -1vw;
+			box-shadow: 0px 0px 22px 34px #07313179;	
 			
 			img {
 				width: 8vw;
 				margin: 1vw;
-				// border-radius: 50%;
 				animation: shake 9s infinite ease-in-out alternate both;
-				transform: translate3d(0, 0, 0);
-				// backface-visibility: hidden;
 				perspective: 1000px;
 			}			  
 			  @keyframes shake {
@@ -139,28 +139,32 @@
 			}
 			h3 > img {
 				width: 10vw;
+				border-radius: 50%;
+				box-shadow: 0px 0px 10px 15px #07313179;	
 				animation: wheal 6s ease-in-out infinite alternate;
 			}
 			@keyframes wheal {
 				100%   {transform: translate(20vw, 0 ) rotate(1turn);}
-			  }
-		}
+			  }}
 		@include largerThen( 768px) {
 			display: flow-root;
 			div {
 				img {
 					width: 5vh;
 				}
-				h3 img {
-					width: 5vh;
+				h3 {
+					display: flex;
+					align-items: center;
+					img {
+						width: 5vh;
+					}
+					* {
+						align-self: center;
+					}
 				}
 				@keyframes wheal {
 					100%   {transform: translate(20vw, 0 ) rotate(1turn);}
-					}
-			}
-		}
-
-	}																	
+					}}}}																	
 	.education {
 		h2 {
 			margin-bottom: 10vh;
@@ -174,12 +178,8 @@
 		h3, div, p {
 			background-color: #07313169;
 			box-shadow: 0px 0px 22px 34px #07313179;
-		}		
-	}
+		}}}
+@keyframes show {
+	0% {display: none;}
+	100% {display: block;}
 }
-
-//   .panel.show{
-// 	  /* display: block; */
-// 	  max-height: fit-content;
-//   }
-
