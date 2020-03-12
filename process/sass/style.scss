@@ -1,9 +1,10 @@
-@import "modules/spinningCircle";
 @import "normalize";
 @import "variables";
 @import "mixins";
 @import "base";
 @import "interface";
 
+@import "modules/spinningCircle";
 @import "modules/main";
 @import "modules/navigation";
+@import "modules/footer";

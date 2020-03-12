@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://use.fontawesome.com/6e47fdd73a.js"></script> -->
-    <!-- <link rel="stylesheet" href="css/spinningCircle.css"> -->
+    <script src="https://use.fontawesome.com/6e47fdd73a.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script async src="js/spinningCircle.js"></script> -->
     <title>Attila Vigh | Resume</title>
 </head>
 <body>
     <!-- <div class="container"> -->
+        
         <script async src="js/script.js"></script>
+        
         <header id="home">
             <div class="circle">
                 <img class="circlex" src="img/icons/coding.svg" alt="coding image">
@@ -45,33 +45,39 @@
         <main>
             <section id="about" class="panel " >
                 <div class="about">
-                    <div><img class="profile-img col-narrow" src="img/attila-vigh-profile.jpg" alt="attila vihg"></div>
+                    <div class="outside">
+                        <div class="inside">
+                            <img class="profile-img col-narrow" src="img/attila-vigh-profile.jpg" alt="attila vihg">
+                        </div>
+                    </div>
                     <div class="col-wide">
                         <h1 class="liquify">Attila Vigh</h1>
-                        <div>
+                        <div class="jr">
                             <span id="jr">jr.</span>
-                            <h2 class="spred"></span> Web Developer</h2>
+                            <h2 ></span> Web Developer</h2>
                         </div>
-                        <p>Moto: <i><q>If something works properly, we have to find out why.</q></i></p>
+                        <div>
+                            <p>Moto: <i><q>If something works properly, we have to find out why.</q></i></p>
+                        </div>
                     </div>
-                    <a href="attilavigh-cv.pdf" download class="btn download">Download CV</a>
+                    <button href="attilavigh-cv.pdf" download class="btn download">Download CV</button>
                 </div>
             </section>
-            <section class="panel" id="skills" >
+            <section id="skills" class="panel">
                 <div class="skills">
                     <h2>Skills</h2>
                     <ul>
                         <li> Task orientated thinking with interest in UI/UX design and web development, committed to contributing to the organisational success. </li>
-                        <li> Good knowledge and understanding of JavaScript & PHP;  </li>
+                        <li> Good knowledge and understanding of JavaScript & PHP.  </li>
                         <li> Excellent collaborative skills, working as a in all areas of development. </li>
-                        <li> The ability to assist other members of the development team </li>
+                        <li> The ability to assist other members of the development team. </li>
                         <li> Self motivate for fast learning new techniques and procedures within technically sophisticated environments. </li>
                     </ul>
                     <h2>Technologies </h2>
                     
                     <!-- Skill 1 Details -->
                     <div class="col-narrow">
-                        <h3>Programming: <img class="skill-icon" src="img/icons/coding.svg" alt="coding image"></h3>
+                        <h3><span>Programming: </span> <img class="skill-icon" src="img/icons/coding.svg" alt="coding image"></h3>
                     </div>
                     
                     <div class="col-wide skill-description">
@@ -145,22 +151,65 @@
                     <!-- School 3 details. -->
                     
                     <h3>Psychology</h3>
-                    <p>Faculty of Psychology of the Hyperion University of Bucharest, Romania (2008)</p>
+                    <p>Hyperion University of Bucharest, Romania (2008)</p>
                 </div>
             </section>
         </main>
-<!-- 
+
         <nav>
             <ul>
-                <li ><a class="accordion" href="#about"><cite>About</cite></a></li>
-                <li ><a class="accordion" href="#skills"><cite>Skills</cite></a></li>
-                <li ><a class="accordion" href="#education"><cite>Education</cite></a></li>
-                <li ><a class="accordion" href="#contact"><cite>Contact</cite></a></li>
-                <li ><a class="accordion" href="#home"><cite>Home</cite></a></li>
+                <li ><a class="nav-btn display" href="#about"><cite>About</cite></a></li>
+                <li ><a class="nav-btn display" href="#skills"><cite>Skills</cite></a></li>
+                <li ><a class="nav-btn display" href="#education"><cite>Education</cite></a></li>
+                <li ><a class="nav-btn" href="#contact"><cite>Contact</cite></a></li>
+                <li ><a class="nav-btn" href="#home"><cite>Home</cite></a></li>
                 
             </ul>
-        </nav>  -->
+        </nav> 
         
-        <!-- </div> -->
+        <footer >
+            <div id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div class="constVar">
+                    <span class="violet">const </span><span class="orange">contact </span>
+                    <span class="typoSign"> = </span> 
+                    <span class="typoSign"> ( </span> 
+                    <i class="blue fa fa-thumbs-up" aria-hidden="true"></i><span class="sr-only"></span> 
+                    <span class="typoSign"> ) </span>
+                    <span class="typoSign"> => </span>
+                    <span class="typoSign"> { </span>
+                </div>    
+                <div class="firstLet">
+                    
+                    <span class="violet ">let </span><span class="blue">contact <span class="typoSign"> = </span> </span> 
+                        <span class="green">&quot</span>
+                            <a href="attilavigh.contact@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i><span class="sr-only"></span></a>
+                            <a href="https://github.com/Attila-Vigh  "><i class="fa fa-github" aria-hidden="true"></i><span class="sr-only"></span</a>
+                            <a href="https://www.linkedin.com/in/attila-vigh"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only"></span></a>
+                </div>
+                        
+                <div class="webURL">
+                    <a href="https://ultimatequestion404.com/">ultimatequestion404.com/</a>
+                    <span class="green">&quot</span>
+                    <span class="typoSign">;</span>
+                </div>    
+                <div class="secondLet">                
+                    <span class="violet">let </span><span class="blue">result </span>
+                    <span class="typoSign"> = </span> <i class="blue fa fa-thumbs-up" aria-hidden="true"></i><span class="sr-only"></span> 
+                </div>
+                <div class="ifResult">
+                    <span class="typoSign"> ? </span> <span class="blue">contact </span></div>
+                <div class="thenResult">
+                        <span class="typoSign"> : </span> <span class="green"><q>Recommend me to your rivals</q></span><span class="typoSign">;</span>
+                </div>
+                <div class="returnResults">
+                    <span class="violet">return </span><span class="blue">result <span class="typoSign">;</span>
+                </div>
+                <div class="closeBraket"> } </div>
+                </div>
+                </div>
+                <p class="copyright"><span class="shadow">Copyright <script> document.writeln(new Date().getFullYear())</script> by Attila Vigh</span></p>
+        </footer>
     </body>
     </html>
